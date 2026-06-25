@@ -11,14 +11,14 @@
     { "luku": "100%", "teksti": "Kiinteä hinta" }
   ],
   "palvelut": [
-    { "ikoni": "🔨", "nimi": "Pintaremontit", "kuvaus": "Maalaus, tapetointi ja lattiat" },
-    { "ikoni": "🚿", "nimi": "Kylpyhuoneremontit", "kuvaus": "Vesieristys, kaakelointi, kalusteet" },
-    { "ikoni": "🪟", "nimi": "Ikkunat ja ovet", "kuvaus": "Vaihto, tiivistys ja maalaus" },
-    { "ikoni": "🏠", "nimi": "Pihatyöt", "kuvaus": "Terassit, aidat ja kulkuväylät" }
+    { "ikoni": "hammer", "nimi": "Pintaremontit", "kuvaus": "Maalaus, tapetointi ja lattiat" },
+    { "ikoni": "shower-head", "nimi": "Kylpyhuoneremontit", "kuvaus": "Vesieristys, kaakelointi, kalusteet" },
+    { "ikoni": "door-open", "nimi": "Ikkunat ja ovet", "kuvaus": "Vaihto, tiivistys ja maalaus" },
+    { "ikoni": "fence", "nimi": "Pihatyöt", "kuvaus": "Terassit, aidat ja kulkuväylät" }
   ],
   "edut": [
-    { "ikoni": "✅", "otsikko": "Kiinteä hinta", "teksti": "Ei ikäviä yllätyksiä – sovittu hinta pitää aina" },
-    { "ikoni": "📅", "otsikko": "Aikataulu pitää", "teksti": "Töihin tullaan sovitusti ja valmistutaan ajoissa" },
-    { "ikoni": "⭐", "otsikko": "10+ vuotta kokemusta", "teksti": "Satoja tyytyväisiä asiakkaita paikkakunnalla" }
+    { "ikoni": "badge-check", "otsikko": "Kiinteä hinta", "teksti": "Ei ikäviä yllätyksiä – sovittu hinta pitää aina" },
+    { "ikoni": "calendar-check", "otsikko": "Aikataulu pitää", "teksti": "Töihin tullaan sovitusti ja valmistutaan ajoissa" },
+    { "ikoni": "hard-hat", "otsikko": "10+ vuotta kokemusta", "teksti": "Satoja tyytyväisiä asiakkaita paikkakunnalla" }
   ]
 }
