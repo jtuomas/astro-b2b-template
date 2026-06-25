@@ -1,24 +1,24 @@
 {
-  "nimi": "Malli-Remontti Oy",
-  "slogan": "Laadukas remontti – ajallaan ja sovitulla hinnalla",
-  "puhelin": "040 123 4567",
-  "sahkoposti": "info@malli-remontti.fi",
-  "paikkakunta": "Oulu",
-  "heroKuva": "https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=1600&q=80",
+  "nimi": "Oulun Autohuolto ja Diagnostiikka Oy",
+  "slogan": "Autojen huollot ja korjaukset edullisesti ja ammattitaidolla",
+  "puhelin": "045 806 7267",
+  "sahkoposti": "asiakaspalvelu@oulunautohuolto.fi", 
+  "paikkakunta": "Oulu (Sammalpolku 2)",
+  "heroKuva": "https://images.unsplash.com/photo-1619642751034-765dfdf7c58e?q=80&w=2000",
   "vartit": [
-    { "luku": "10+", "teksti": "Vuotta kokemusta" },
-    { "luku": "200+", "teksti": "Tyytyväistä asiakasta" },
-    { "luku": "100%", "teksti": "Kiinteä hinta" }
+    { "luku": "72€", "teksti": "Perushuollot /h" },
+    { "luku": "100%", "teksti": "Tyytyväisyystakuu" },
+    { "luku": "Ma-Pe", "teksti": "Klo 08-16" }
   ],
- "palvelut": [
-    { "ikoni": "format_paint", "nimi": "Pintaremontit", "kuvaus": "Maalaus, tapetointi ja lattiat" },
-    { "ikoni": "shower", "nimi": "Kylpyhuoneremontit", "kuvaus": "Vesieristys, kaakelointi, kalusteet" },
-    { "ikoni": "window", "nimi": "Ikkunat ja ovet", "kuvaus": "Vaihto, tiivistys ja maalaus" },
-    { "ikoni": "deck", "nimi": "Pihatyöt", "kuvaus": "Terassit, aidat ja kulkuväylät" }
+  "palvelut": [
+    { "ikoni": "car_repair", "nimi": "Huollot ja korjaukset", "kuvaus": "Peruskorjaukset ja huollot nopeasti hintaan 72€/h." },
+    { "ikoni": "troubleshoot", "nimi": "Sähkötyöt & Diagnostiikka", "kuvaus": "Sähkötyöt ja vianetsintä modernilla laitteistolla." },
+    { "ikoni": "water_drop", "nimi": "Öljynvaihdot", "kuvaus": "Henkilöautojen öljynvaihdot alkaen 30€ + tarvikkeet." },
+    { "ikoni": "welding_tool", "nimi": "Hitsaus- ja maalaustyöt", "kuvaus": "Ammattitaitoiset hitsaus- ja maalaustyöt hintaan 92€/h." }
   ],
   "edut": [
-    { "ikoni": "verified", "otsikko": "Kiinteä hinta", "teksti": "Ei ikäviä yllätyksiä - sovittu hinta pitää aina" },
-    { "ikoni": "schedule", "otsikko": "Aikataulu pitää", "teksti": "Töihin tullaan sovitusti ja valmistutaan ajoissa" },
-    { "ikoni": "military_tech", "otsikko": "10+ vuotta kokemusta", "teksti": "Satoja tyytyväisiä asiakkaita paikkakunnalla" }
+    { "ikoni": "verified", "otsikko": "Paikallinen asiantuntija", "teksti": "Toimimme Oulun Alppilassa. AutoJerry-luotettu kumppani." },
+    { "ikoni": "payments", "otsikko": "Selkeä hinnasto", "teksti": "Kerromme hinta-arvion aina etukäteen – ei yllättäviä piilokuluja." },
+    { "ikoni": "schedule", "otsikko": "Joustava palvelu", "teksti": "Olemme auki arkisin 8-16, mutta viikonloppuisin palvelemme myös sopimuksen mukaan!" }
   ]
 }
