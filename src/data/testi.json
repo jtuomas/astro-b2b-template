@@ -1,0 +1,29 @@
+{
+  "nimi": "Oulun Siivouspalvelu Oy",
+  "paikkakunta": "Oulu",
+  "toimiala": "Kotisiivous",
+  "slogan": "Laadukasta palvelua – Ammattitaidolla",
+  "puhelin": "040 123 4567",
+  "sahkoposti": "info@oulunsiivous.fi",
+  "lomakeAvain": "tähän-laittaisit-web3forms-avaimen",
+  "heroKuva": "https://images.unsplash.com/photo-1581578731548-c64695cc6952?q=80&w=2000",
+  "vartit": [
+    { "luku": "100%", "teksti": "Tyytyväisyystakuu" },
+    { "luku": "-60%", "teksti": "Kotitalousvähennys" },
+    { "luku": "Ilmainen", "teksti": "Hinta-arvio" }
+  ],
+  "palvelut": [
+    { "nimi": "Kotisiivous", "kuvaus": "Perusteellista ja huolellista siivousta kotiisi.", "ikoni": "cleaning_services" },
+    { "nimi": "Ikkunanpesu", "kuvaus": "Kirkasta jälkeä ilman raitoja.", "ikoni": "window" },
+    { "nimi": "Muuttosiivous", "kuvaus": "Huolehdimme loppusiivouksesta puolestasi.", "ikoni": "local_shipping" }
+  ],
+  "edut": [
+    { "otsikko": "Nopea palvelu", "teksti": "Vastaamme yhteydenottoihin viimeistään seuraavana päivänä.", "ikoni": "bolt" },
+    { "otsikko": "Luotettavuus", "teksti": "Kaikki työntekijämme ovat kokeneita ammattilaisia.", "ikoni": "verified" }
+  ],
+  "arvostelut": [
+    { "nimi": "Minna M.", "teksti": "Aivan loistavaa jälkeä, suosittelen!", "kirjain": "M" },
+    { "nimi": "Antti K.", "teksti": "Nopea ja ystävällinen palvelu.", "kirjain": "A" }
+  ],
+  "osoite": "Siivoustie 1, 90100 Oulu"
+}

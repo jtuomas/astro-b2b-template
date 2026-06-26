@@ -1,6 +1,6 @@
 ---
 import "../styles/global.css";
-import yritys from "../data/yritys.json";
+import yritys from "../data/testi.json";
 
 // Sloganin fiksutus: Jaetaan pääotsikkoon ja korostettuun tekstiin
 const sloganParts = yritys.slogan
@@ -383,7 +383,7 @@ const headlineAccent =
         )
       }
 
-      {/* --- CTA --- */}
+      {/* --- CTA & LOMAKE (ÄLYKÄS ASETTELU) --- */}
       <section
         id="yhteys"
         class="relative isolate overflow-hidden bg-blue-900 px-5 py-24 text-white md:px-8 md:py-32"
@@ -392,62 +392,92 @@ const headlineAccent =
           class="absolute inset-0 -z-10 opacity-40 bg-[radial-gradient(circle_at_20%_20%,rgba(249,115,22,0.3)_0%,transparent_40%),radial-gradient(circle_at_80%_80%,rgba(37,99,235,0.5)_0%,transparent_50%)]"
         >
         </div>
-        <div class="mx-auto max-w-4xl text-center">
-          <div
-            data-reveal
-            class="mb-4 text-xs font-black uppercase tracking-[0.2em] text-orange-400 opacity-0 translate-y-8 transition-all duration-700"
-          >
-            Aloitetaan
-          </div>
-          <h2
-            data-reveal
-            data-delay="100"
-            class="text-5xl font-black leading-[1.1] md:text-6xl lg:text-7xl opacity-0 translate-y-8 transition-all duration-700 tracking-tight"
-          >
-            Valmis aloittamaan <span class="block text-orange-500"
-              >projektisi?</span
-            >
-          </h2>
-          <p
-            data-reveal
-            data-delay="200"
-            class="mx-auto mt-8 max-w-2xl text-xl text-blue-100 font-light opacity-0 translate-y-8 transition-all duration-700"
-          >
-            Soita tai laita viestiä – vastaamme nopeasti ja annamme
-            asiantuntijan arvion kohteeseesi.
-          </p>
 
-          <div
-            data-reveal
-            data-delay="300"
-            class="mt-12 flex flex-wrap items-center justify-center gap-6 opacity-0 translate-y-8 transition-all duration-700"
-          >
-            {
-              yritys.puhelin && (
-                <a
-                  href={`tel:${yritys.puhelin.replace(/\s/g, "")}`}
-                  class="group inline-flex items-center gap-3 rounded-full bg-orange-500 px-10 py-5 text-xl font-bold text-white shadow-2xl transition-all hover:-translate-y-1 hover:bg-orange-400"
-                >
-                  <span class="material-icons-round text-[24px]">
-                    phone_in_talk
-                  </span>
+        {yritys.lomakeAvain ? (
+          // VERSIO 1: Näytetään lomake (Jos lomakeAvain on asetettu)
+          <div class="mx-auto max-w-7xl grid lg:grid-cols-2 gap-16 lg:gap-8 items-center">
+            <div class="max-w-2xl">
+              <div data-reveal class="mb-4 text-xs font-black uppercase tracking-[0.2em] text-orange-400 opacity-0 translate-y-8 transition-all duration-700">
+                Aloitetaan
+              </div>
+              <h2 data-reveal data-delay="100" class="text-5xl font-black leading-[1.1] md:text-6xl opacity-0 translate-y-8 transition-all duration-700 tracking-tight">
+                Valmis aloittamaan <span class="block text-orange-500">projektisi?</span>
+              </h2>
+              <p data-reveal data-delay="200" class="mt-8 text-xl text-blue-100 font-light opacity-0 translate-y-8 transition-all duration-700">
+                Täytä viereinen lomake tai soita suoraan. Vastaamme nopeasti ja annamme asiantuntijan arvion kohteeseesi.
+              </p>
+              <div data-reveal data-delay="300" class="mt-12 flex flex-wrap items-center gap-6 opacity-0 translate-y-8 transition-all duration-700">
+                {yritys.puhelin && (
+                  <a href={`tel:${yritys.puhelin.replace(/\s/g, "")}`} class="group inline-flex items-center gap-3 rounded-full bg-white/10 px-8 py-4 text-lg font-bold text-white shadow-xl backdrop-blur-md transition-all hover:bg-white/20 border border-white/20">
+                    <span class="material-icons-round text-[24px]">phone_in_talk</span>
+                    {yritys.puhelin}
+                  </a>
+                )}
+              </div>
+            </div>
+
+            <div data-reveal data-delay="400" class="bg-white rounded-3xl p-8 md:p-10 shadow-2xl opacity-0 translate-y-12 transition-all duration-700">
+              <form action="https://api.web3forms.com/submit" method="POST" class="flex flex-col gap-5 text-gray-900">
+                <input type="hidden" name="access_key" value={yritys.lomakeAvain} />
+                <input type="checkbox" name="botcheck" class="hidden" style="display: none;" />
+
+                <div class="grid sm:grid-cols-2 gap-5">
+                  <div>
+                    <label for="nimi" class="block text-sm font-bold text-gray-700 mb-1">Nimi *</label>
+                    <input type="text" name="Nimi" id="nimi" required placeholder="Matti Meikäläinen" class="w-full rounded-xl border border-gray-300 bg-gray-50 px-4 py-3 text-base focus:border-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-600/20 transition-all" />
+                  </div>
+                  <div>
+                    <label for="puhelin" class="block text-sm font-bold text-gray-700 mb-1">Puhelinnumero *</label>
+                    <input type="tel" name="Puhelin" id="puhelin" required placeholder="040 123 4567" class="w-full rounded-xl border border-gray-300 bg-gray-50 px-4 py-3 text-base focus:border-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-600/20 transition-all" />
+                  </div>
+                </div>
+
+                <div>
+                  <label for="email" class="block text-sm font-bold text-gray-700 mb-1">Sähköposti</label>
+                  <input type="email" name="Sähköposti" id="email" placeholder="matti@esimerkki.fi" class="w-full rounded-xl border border-gray-300 bg-gray-50 px-4 py-3 text-base focus:border-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-600/20 transition-all" />
+                </div>
+
+                <div>
+                  <label for="viesti" class="block text-sm font-bold text-gray-700 mb-1">Miten voimme palvella? *</label>
+                  <textarea name="Viesti" id="viesti" rows="4" required placeholder="Kerro lyhyesti tarpeestasi..." class="w-full rounded-xl border border-gray-300 bg-gray-50 px-4 py-3 text-base focus:border-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-600/20 transition-all resize-none"></textarea>
+                </div>
+
+                <button type="submit" class="mt-2 w-full inline-flex justify-center items-center gap-2 rounded-xl bg-orange-500 px-8 py-4 text-lg font-bold text-white shadow-lg transition-all hover:-translate-y-1 hover:bg-orange-400">
+                  Pyydä ilmainen tarjous
+                  <span class="material-icons-round text-[20px]">send</span>
+                </button>
+              </form>
+            </div>
+          </div>
+        ) : (
+          // VERSIO 2: Keskitetty teksti ilman lomaketta (Jos lomakeAvain on tyhjä)
+          <div class="mx-auto max-w-4xl text-center">
+            <div data-reveal class="mb-4 text-xs font-black uppercase tracking-[0.2em] text-orange-400 opacity-0 translate-y-8 transition-all duration-700">
+              Aloitetaan
+            </div>
+            <h2 data-reveal data-delay="100" class="text-5xl font-black leading-[1.1] md:text-6xl lg:text-7xl opacity-0 translate-y-8 transition-all duration-700 tracking-tight">
+              Valmis aloittamaan <span class="block text-orange-500">projektisi?</span>
+            </h2>
+            <p data-reveal data-delay="200" class="mx-auto mt-8 max-w-2xl text-xl text-blue-100 font-light opacity-0 translate-y-8 transition-all duration-700">
+              Soita tai laita viestiä – vastaamme nopeasti ja annamme asiantuntijan arvion kohteeseesi.
+            </p>
+
+            <div data-reveal data-delay="300" class="mt-12 flex flex-wrap items-center justify-center gap-6 opacity-0 translate-y-8 transition-all duration-700">
+              {yritys.puhelin && (
+                <a href={`tel:${yritys.puhelin.replace(/\s/g, "")}`} class="group inline-flex items-center gap-3 rounded-full bg-orange-500 px-10 py-5 text-xl font-bold text-white shadow-2xl transition-all hover:-translate-y-1 hover:bg-orange-400">
+                  <span class="material-icons-round text-[24px]">phone_in_talk</span>
                   {yritys.puhelin}
                 </a>
-              )
-            }
-            {
-              yritys.sahkoposti && (
-                <a
-                  href={`mailto:${yritys.sahkoposti}`}
-                  class="inline-flex items-center gap-3 rounded-full border-2 border-white/20 bg-white/5 px-10 py-5 text-xl font-bold text-white backdrop-blur-md transition-all hover:bg-white/10 hover:border-white/40"
-                >
+              )}
+              {yritys.sahkoposti && (
+                <a href={`mailto:${yritys.sahkoposti}`} class="inline-flex items-center gap-3 rounded-full border-2 border-white/20 bg-white/5 px-10 py-5 text-xl font-bold text-white backdrop-blur-md transition-all hover:bg-white/10 hover:border-white/40">
                   <span class="material-icons-round text-[24px]">mail</span>
                   {yritys.sahkoposti}
                 </a>
-              )
-            }
+              )}
+            </div>
           </div>
-        </div>
+        )}
       </section>
     </main>
 
