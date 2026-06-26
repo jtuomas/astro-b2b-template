@@ -1,22 +1,13 @@
 {
-  "nimi": "Sirina Autohuolto",
-  "slogan": "Asiantuntevaa ja luotettavaa autohuoltoa Oulussa – kaikki merkit",
-  "puhelin": "040 123 4567",
-  "sahkoposti": "info@sirinaautohuolto.fi", 
-  "paikkakunta": "Oulu",
-  "osoite": "Autotie 5, 90100 Oulu",
-  "heroKuva": "/images/autohuolto-hero.jpg",
-  "vartit": [
-    { "luku": "100%", "teksti": "Kotimainen palvelu" },
-    { "luku": "Kaikki", "teksti": "Automarkit & mallit" }
-  ],
-  "palvelut": [
-    { "ikoni": "build", "nimi": "Määräaikaishuollot", "kuvaus": "Valmistajan ohjeiden mukaiset huollot takuun säilyen." }
-  ],
-  "edut": [
-    { "ikoni": "handshake", "otsikko": "Luotettava korjaamo", "teksti": "Teemme vain sen, mistä on sovittu." }
-  ],
-  "arvostelut": [
-    { "kirjain": "T", "nimi": "Timo K.", "teksti": "Ystävällinen palvelu ja homma hoitui!" }
-  ]
+  "nimi": "",
+  "slogan": "",
+  "puhelin": "",
+  "sahkoposti": "",
+  "paikkakunta": "",
+  "osoite": "",
+  "heroKuva": "",
+  "vartit": [],
+  "palvelut": [],
+  "edut": [],
+  "arvostelut": []
 }
