@@ -1,30 +1,21 @@
 {
-  "nimi": "Oulun Autohuolto ja Diagnostiikka Oy",
-  "slogan": "Autojen huollot ja korjaukset edullisesti ja ammattitaidolla",
-  "puhelin": "045 806 7267",
-  "sahkoposti": "asiakaspalvelu@oulunautohuolto.fi", 
-  "paikkakunta": "Oulu",
-  "osoite": "Sammalpolku 2, Oulu",
-  "heroKuva": "https://images.unsplash.com/photo-1619642751034-765dfdf7c58e?q=80&w=2000",
+  "nimi": "",
+  "slogan": "",
+  "puhelin": "",
+  "sahkoposti": "",
+  "paikkakunta": "",
+  "osoite": "",
+  "heroKuva": "",
   "vartit": [
-    { "luku": "72€", "teksti": "Perushuollot /h" },
-    { "luku": "100%", "teksti": "Tyytyväisyystakuu" },
-    { "luku": "Ma-Pe", "teksti": "Klo 08-16" }
+    { "luku": "", "teksti": "" }
   ],
   "palvelut": [
-    { "ikoni": "car_repair", "nimi": "Huollot ja korjaukset", "kuvaus": "Peruskorjaukset ja huollot nopeasti hintaan 72€/h." },
-    { "ikoni": "troubleshoot", "nimi": "Sähkötyöt & Diagnostiikka", "kuvaus": "Sähkötyöt ja vianetsintä modernilla laitteistolla." },
-    { "ikoni": "water_drop", "nimi": "Öljynvaihdot", "kuvaus": "Henkilöautojen öljynvaihdot alkaen 30€ + tarvikkeet." },
-    { "ikoni": "format_paint", "nimi": "Hitsaustyöt ja maalaus", "kuvaus": "Ammattitaitoiset hitsaus- ja maalaustyöt hintaan 92€/h." }
+    { "ikoni": "Material-ikoni", "nimi": "", "kuvaus": "" }
   ],
   "edut": [
-    { "ikoni": "verified", "otsikko": "Paikallinen asiantuntija", "teksti": "Toimimme Oulun Alppilassa. AutoJerry-luotettu kumppani." },
-    { "ikoni": "payments", "otsikko": "Selkeä hinnasto", "teksti": "Kerromme hinta-arvion aina etukäteen – ei yllättäviä piilokuluja." },
-    { "ikoni": "schedule", "otsikko": "Joustava palvelu", "teksti": "Olemme auki arkisin 8-16, mutta viikonloppuisin palvelemme myös sopimuksen mukaan!" }
+    { "ikoni": "Material-ikoni", "otsikko": "", "teksti": "" }
   ],
   "arvostelut": [
-    { "kirjain": "M", "nimi": "Matti K.", "teksti": "Nopea vianetsintä ja asiallinen palvelu. Auto tuli kuntoon sovitulla hinnalla." },
-    { "kirjain": "S", "nimi": "Sari L.", "teksti": "Sain ajan huoltoon jo seuraavalle päivälle. Homma toimi juuri kuten luvattiin, ei yllätyksiä." },
-    { "kirjain": "J", "nimi": "Jukka P.", "teksti": "Ammattitaitoista porukkaa. Etsivät vian, jota edes merkkiliike ei meinannut löytää." }
+    { "kirjain": "", "nimi": "", "teksti": "" }
   ]
 }
