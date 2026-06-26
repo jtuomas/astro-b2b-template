@@ -15,17 +15,26 @@ const headlineAccent =
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width" />
-    <meta
-      name="description"
-      content={yritys.slogan || "Palvelemme ammattitaidolla"}
-    />
-    <title>
-      {yritys.nimi ? `${yritys.nimi} | ${yritys.paikkakunta}` : "Uusi Yritys"}
-    </title>
-    <link
-      href="https://fonts.googleapis.com/icon?family=Material+Icons|Material+Icons+Round"
-      rel="stylesheet"
-    />
+    
+    {/* --- PERUS SEO --- */}
+    <title>{yritys.nimi ? `${yritys.nimi} | ${yritys.paikkakunta}` : "Uusi Yritys"}</title>
+    <meta name="description" content={yritys.slogan || "Palvelemme ammattitaidolla"} />
+    <meta name="theme-color" content="#1e3a8a" /> {/* Tailwind blue-900 mobiiliselaimen yläpalkkiin */}
+
+    {/* --- OPEN GRAPH (Facebook, WhatsApp, LinkedIn) --- */}
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content={yritys.nimi ? `${yritys.nimi} | ${yritys.paikkakunta}` : "Uusi Yritys"} />
+    <meta property="og:description" content={yritys.slogan || "Palvelemme ammattitaidolla"} />
+    {yritys.heroKuva && <meta property="og:image" content={yritys.heroKuva} />}
+
+    {/* --- TWITTER / X CARD --- */}
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content={yritys.nimi || "Uusi Yritys"} />
+    <meta name="twitter:description" content={yritys.slogan || "Palvelemme ammattitaidolla"} />
+    {yritys.heroKuva && <meta name="twitter:image" content={yritys.heroKuva} />}
+
+    {/* --- FONTTI-IKONIT --- */}
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons|Material+Icons+Round" rel="stylesheet" />
   </head>
   <body
     class="min-h-screen bg-gray-50 text-gray-900 antialiased font-sans flex flex-col"
